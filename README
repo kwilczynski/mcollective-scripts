@@ -1,0 +1,3 @@
+Various Marionette Collective scripts will be stored here.  Most of them
+are to be run by the Marionette Collective (mcollective) framework even
+despite the sheer fact that each script is written in Ruby ...
