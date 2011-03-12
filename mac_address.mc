@@ -15,11 +15,11 @@
 
 def cisco_mac_format(address)
   return address.tr(':', '').tr('A-Z', 'a-z').unpack('a4a4a4').join('.')
-end
+end # def cisco_mac_format
 
 inventory do
   format "%s %s %s %s"
-  
+
   fields do
     [
       identity,
@@ -27,5 +27,5 @@ inventory do
       facts['macaddress'],
       cisco_mac_format(facts['macaddress'])
     ]
-  end
-end
+  end # def fields
+end # def inventory
